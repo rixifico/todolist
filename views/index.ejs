@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>to do list</title>
+</head>
+
+<body>
+
+  <h1><%=dayOfWeek%></h1>
+  <ul>
+    <li>Desayunar</li>
+    <li>Ir a trabajar</li>
+    <li>Comprar</li>
+    <li>Cocinar</li>
+
+    <%for (var i = 0, i < newItems.length, i++) {%>
+    <li> <%=newItems[i]%> </li>
+    <%}%>
+
+
+
+
+  </ul>
+
+  <form class="" action="/" method="post">
+    <input type="text" name="nextItem" placeholder="Añadir" autofocus>
+    <br>
+    <button type="submit" name="button">Añadir a la lista</button>
+
+  </form>
+
+</body>
+
+</html>
